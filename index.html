@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">WhatsApp Survey Form</h1>
+    <p id="description">Thank You for taking the time to help us improve our App.</p>
+    <form id="survey-form" method="post">
+        <fieldset>
+            <label id="name-label" for="name">Name
+                <input id="name" name="name" type="text" placeholder="Enter your name" required>
+            </label>
+            <label id="email-label" for="email">Email
+                <input id="email" name="email" type="email" placeholder="Enter your email" required>
+            </label>
+            <label id="number-label" for="number">Age (Optional)
+                <input id="number" name="number" type="number" placeholder="Age" min="13" max="120">
+            </label>
+            <label for="dropdown">Which option best describes your current role?
+                <select name="currentRole" id="dropdown">
+                    <option value="">Select</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full time job</option>
+                    <option value="3">Prefer not to say</option>
+                    <option value="4">Others</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>Do you like our new features?
+            <label for="loveit">
+                <input type="radio" name="features" value="loveit" id="loveit">Love it
+            </label>
+            <label for="good">
+                <input type="radio" name="features" value="good" id="good">Good
+            </label>
+            <label for="better">
+                <input type="radio" name="features" value="better" id="better">Could have been better
+            </label>
+            <label for="poor">
+                <input type="radio" name="features" value="poor" id="poor">Poor
+            </label>
+        </fieldset>
+        <fieldset>What do you use the most?
+            <label for="mobile">
+                <input type="checkbox" value="mobile" name="mobile" id="mobile">WhatsApp Mobile
+            </label>
+            <label for="desktop">
+                <input type="checkbox" value="desktop" name="desktop" id="desktop">WhatsApp Desktop
+            </label>
+            <label for="web">
+                <input type="checkbox" value="web" name="web" id="web">WhatsApp Web
+            </label>
+        </fieldset>
+        <fieldset>Please give your valueable feedback to make us better.
+            <textarea name="feedback" id="feedback" cols="30" rows="4" placeholder="Enter your text here..."></textarea>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+</html>
